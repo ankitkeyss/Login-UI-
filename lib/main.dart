@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'dashboard.dart';
+import 'dashd.dart';
 import 'login_page.dart';
 
 void main() {
@@ -19,10 +20,11 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: 'login_page',
       routes: {
-        'login_pages':(context)=>MyHomePage(),
+        'login_page':(context)=>MyHomePage(),
         'dashboard':(context)=>dashboard(),
+        'dashd':(context)=>my_dashed(),
       },
-      home: MyHomePage(),
+
     );
   }
 }

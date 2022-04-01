@@ -29,6 +29,13 @@ class UI_Design extends StatefulWidget {
 }
 bool _checkbox = true;
 class _UI_DesignState extends State<UI_Design> {
+  final _text = TextEditingController();
+  bool _validate = false;
+  @override
+  void dispose() {
+    _text.dispose();
+    super.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -58,11 +65,13 @@ class _UI_DesignState extends State<UI_Design> {
               SizedBox(
                 height: 15,
               ),
-              TextField(
+              TextFormField(
+                controller: _text,
 
                   style: TextStyle(fontWeight: FontWeight.bold,height:0.3),
 
                   decoration: InputDecoration(
+                    errorText:  _validate ? 'Value Can\'t Be Empty' : null,
                     fillColor: Colors.white70,
                     hintText: "Username",
                     filled: true,
@@ -128,7 +137,11 @@ class _UI_DesignState extends State<UI_Design> {
                         child: ElevatedButton(
                           child: Text("SIGN IN", style: TextStyle(fontSize: 20.0),),
                            onPressed: () {
-                             Navigator.pushNamed(context, 'dashboard');
+                            setState(() {
+                              _text.text.isEmpty ? _validate = true : _validate = false;
+                              Navigator.pushNamed(context, 'dashboard');
+                            });
+
                            },
                         )
                     ),
@@ -150,7 +163,7 @@ class _UI_DesignState extends State<UI_Design> {
                          height: 45,
                          width: 338,
                          child: TextButton(onPressed: (){
-                           Navigator.pushNamed(context, 'register');
+                           Navigator.pushNamed(context, 'dashd');
                          },
                            child: Text("SIGN IN USING ONE TIME PASSWORD",style: TextStyle(
                              fontWeight: FontWeight.bold,
