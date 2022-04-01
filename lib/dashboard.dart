@@ -127,12 +127,13 @@ class _mypagesState extends State<mypages> {
         Row(
           children: [
             Container(
-
+              decoration: BoxDecoration( color: Colors.white, borderRadius: BorderRadius.only(topLeft: Radius.circular(8),topRight: Radius.circular(8),  bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+              ),
               // margin: EdgeInsets.only(top: 90),
               // width: MediaQuery.of(context).size.width,
               margin: EdgeInsets.only(left:25,right: 15),
               height: 50,
-              color: Colors.white,
+             // color: Colors.white,
               child: Row(
 
                 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -160,12 +161,13 @@ class _mypagesState extends State<mypages> {
         Row(
           children: [
             Container(
-
+              decoration: BoxDecoration( color: Colors.white, borderRadius: BorderRadius.only(topLeft: Radius.circular(8),topRight: Radius.circular(8),  bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+              ),
               // margin: EdgeInsets.only(top: 90),
               // width: MediaQuery.of(context).size.width,
               margin: EdgeInsets.only(left:25,right: 15),
               height: 50,
-              color: Colors.white,
+             // color: Colors.white,
               child: Row(
 
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -194,12 +196,13 @@ class _mypagesState extends State<mypages> {
         Row(
           children: [
             Container(
-
+              decoration: BoxDecoration( color: Colors.white, borderRadius: BorderRadius.only(topLeft: Radius.circular(8),topRight: Radius.circular(8),  bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+              ),
               // margin: EdgeInsets.only(top: 90),
               // width: MediaQuery.of(context).size.width,
               margin: EdgeInsets.only(left:25,right: 15),
               height: 50,
-              color: Colors.white,
+           //   color: Colors.white,
               child: Row(
 
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -228,12 +231,13 @@ class _mypagesState extends State<mypages> {
         Row(
           children: [
             Container(
-
+              decoration: BoxDecoration( color: Colors.white, borderRadius: BorderRadius.only(topLeft: Radius.circular(8),topRight: Radius.circular(8),  bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+              ),
               // margin: EdgeInsets.only(top: 90),
               // width: MediaQuery.of(context).size.width,
               margin: EdgeInsets.only(left:25,right: 15),
               height: 50,
-              color: Colors.white,
+              //color: Colors.white,
               child: Row(
 
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -339,31 +343,23 @@ class _mypagesState extends State<mypages> {
                   SizedBox(
                     height: 10,
                   ),
-                  Expanded(
-                    child: Row(
+                         Row(
                       children: [
                         Column(
+
                           children: [
                             Container(
-                            //  decoration: BoxDecoration( color: Colors.white, borderRadius: BorderRadius.only(topLeft: Radius.circular(5),topRight: Radius.circular(4),  bottomLeft: Radius.circular(5),bottomRight: Radius.circular(5)),
-                           //   ),
-
+                              padding: EdgeInsets.only(left: 30),
+                               decoration: BoxDecoration( color: Colors.red, borderRadius: BorderRadius.only(topLeft: Radius.circular(8),topRight: Radius.circular(8),  bottomLeft: Radius.circular(8),bottomRight: Radius.circular(8)),
+                              ),
                               height: 40,
-                              color: Colors.red,
-                              width:340,
+                            width:340,
                             ),
                           ],
                         )
-                        // Container(
-                        //   margin: EdgeInsets.only(right:50 ),
-                        //   height: 40,
-                        //   width: 280,
-                        //
-                        //   color: Colors.red,
-                        // )
                       ],
                     ),
-                  )
+
                 ],
               ),
 
@@ -378,8 +374,3 @@ class _mypagesState extends State<mypages> {
   }
 }
 
-// Container(
-// padding: EdgeInsets.only(bottom: 90,left: 20),
-// child: Text("Last Data Synced",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),)
-//
-// ),

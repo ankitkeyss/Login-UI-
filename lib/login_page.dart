@@ -45,6 +45,7 @@ class _UI_DesignState extends State<UI_Design> {
         ),
 
         SingleChildScrollView(
+          physics:NeverScrollableScrollPhysics(),
           child: Container(
             padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.4,
                 right: 35,left: 35),
